@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>FrApp42.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>FrApp42.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <Title>Net.VCards</Title>
+    <Company>FrApp42</Company>
+    <PackageProjectUrl>https://github.com/FrApp42/Net.VCards</PackageProjectUrl>
+    <Copyright>Apache 2.0</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/FrApp42/Net.VCards.git</RepositoryUrl>
+    <PackageTags>vcards</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

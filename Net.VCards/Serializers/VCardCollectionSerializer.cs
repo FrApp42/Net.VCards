@@ -1,0 +1,18 @@
+﻿using System.Text;
+
+namespace FrApp42.Net.VCards.Serializers
+{
+    public static class VCardCollectionSerializer
+    {
+        public static string Serialize(this IEnumerable<VCard> vcards)
+        {
+            var builder = new StringBuilder();
+            foreach (var vcard in vcards)
+            {
+                builder.Append(vcard.Serialize());
+            }
+
+            return builder.ToString();
+        }
+    }
+}
