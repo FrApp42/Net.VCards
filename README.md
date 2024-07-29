@@ -1,4 +1,4 @@
-# FrApps42.Net.VCards
+# FrApp42.Net.VCards
 
 Based on project [MixERP.Net.VCards](https://github.com/mixerp/MixERP.Net.VCards)
 
@@ -14,7 +14,7 @@ VCards is a standard-compliant, lightweight, and forgiving vCard parser written 
 **Download Nuget Package**
 
 ```nuget
-Install-Package FrApps42.Net.VCards
+Install-Package FrApp42.Net.VCards
 ```
 
 **Create a vCard**
@@ -41,13 +41,13 @@ File.WriteAllText(path, serialized);
 
 **Parse a VCF File**
 ```csharp
-IEnumerable<VCard> vcards = FrApps42.Net.VCards.Deserializer.Deserialize(path);
+IEnumerable<VCard> vcards = FrApp42.Net.VCards.Deserializer.Deserialize(path);
 ```
 or
 
 ```csharp
 string contents = File.ReadAllText(path, Encoding.UTF8);
-IEnumerable<VCard> vcards = FrApps42.Net.VCards.Deserializer.GetVCards(contents);
+IEnumerable<VCard> vcards = FrApp42.Net.VCards.Deserializer.GetVCards(contents);
 
 foreach (var vcard in vcards)
 {
