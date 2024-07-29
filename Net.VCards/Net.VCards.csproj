@@ -9,16 +9,21 @@
     <Title>Net.VCards</Title>
     <Company>FrApp42</Company>
     <PackageProjectUrl>https://github.com/FrApp42/Net.VCards</PackageProjectUrl>
-    <Copyright>Apache 2.0</Copyright>
+    <Copyright>Apache License 2.0</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/FrApp42/Net.VCards.git</RepositoryUrl>
     <PackageTags>vcards</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <PackageLicenseFile>LICENSE.MD</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.MD">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
